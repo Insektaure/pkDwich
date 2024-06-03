@@ -1,4 +1,5 @@
 #define TESLA_INIT_IMPL
+
 #include "views/main-view.hpp"
 #include <tesla.hpp>
 
