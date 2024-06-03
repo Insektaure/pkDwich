@@ -1,6 +1,7 @@
 #pragma once
 
-#include "./sv/monotype-view.hpp"
+#include "./sv/monotypeSalty-view.hpp"
+#include "./sv/monotypeAlt-view.hpp"
 #include <tesla.hpp>
 
 class pkDwich : public tsl::Gui {
@@ -15,8 +16,7 @@ public:
         list->addItem(new tsl::elm::CategoryHeader("Recipes"));
 
         list->addItem(new MonotypeViewButton());
-
-        list->addItem(new tsl::elm::ListItem(""));
+        list->addItem(new MonotypeAltViewButton());
 
         frame->setContent(list);
 

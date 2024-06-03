@@ -10,7 +10,7 @@ class MonotypeView : public tsl::Gui {
   MonotypeView() { }
 
   virtual tsl::elm::Element *createUI() override {
-    auto frame = new tsl::elm::OverlayFrame("Monotype (Salty)", " ");
+    auto frame = new tsl::elm::OverlayFrame("Shiny (Salty Herba Mystica)", " ");
     auto list = new tsl::elm::List();
 
     list->addItem(new tsl::elm::CategoryHeader("Type"));
@@ -42,5 +42,5 @@ class MonotypeView : public tsl::Gui {
 
 class MonotypeViewButton : public Button {
  public:
-  MonotypeViewButton() : Button("Monotype (Salty)") { this->onClick(tsl::changeTo<MonotypeView>); }
+  MonotypeViewButton() : Button("Shiny (Salty Herba Mystica)") { this->onClick(tsl::changeTo<MonotypeView>); }
 };
