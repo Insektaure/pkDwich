@@ -10,6 +10,7 @@ struct RecipeItems {
 
 struct RecipeBonus {
     std::string name;
+    std::string type;
     int level;
 };
 
@@ -25,9 +26,9 @@ Recipe Normal = {
         {"Sweet Herba Mystica", 1}
     },
     {
-        {"Sparkling Power", 3},
-        {"Title Power", 3},
-        {"Encounter Power", 3}
+        {"Sparkling Power", "Normal", 3},
+        {"Title Power", "Normal", 3},
+        {"Encounter Power", "Normal", 3}
     }
 };
 
@@ -38,9 +39,9 @@ Recipe Fire = {
         {"Sweet Herba Mystica", 1}
     },
     {
-        {"Sparkling Power", 3},
-        {"Title Power", 3},
-        {"Encounter Power", 3}
+        {"Sparkling Power", "Fire", 3},
+        {"Title Power", "Fire", 3},
+        {"Encounter Power", "Fire", 3}
     }
 };
 
@@ -51,9 +52,9 @@ Recipe Water = {
         {"Sweet Herba Mystica", 1}
     },
     {
-        {"Sparkling Power", 3},
-        {"Title Power", 3},
-        {"Encounter Power", 3}
+        {"Sparkling Power", "Water", 3},
+        {"Title Power", "Water", 3},
+        {"Encounter Power", "Water", 3}
     }
 };
 
@@ -64,9 +65,9 @@ Recipe Electric = {
         {"Sweet Herba Mystica", 1}
     },
     {
-        {"Sparkling Power", 3},
-        {"Title Power", 3},
-        {"Encounter Power", 3}
+        {"Sparkling Power", "Electric", 3},
+        {"Title Power", "Electric", 3},
+        {"Encounter Power", "Electric", 3}
     }
 };
 
@@ -77,9 +78,9 @@ Recipe Grass = {
         {"Sweet Herba Mystica", 1}
     },
     {
-        {"Sparkling Power", 3},
-        {"Title Power", 3},
-        {"Encounter Power", 3}
+        {"Sparkling Power", "Grass", 3},
+        {"Title Power", "Grass", 3},
+        {"Encounter Power", "Grass", 3}
     }
 };
 
@@ -90,9 +91,9 @@ Recipe Ice = {
         {"Sweet Herba Mystica", 1}
     },
     {
-        {"Sparkling Power", 3},
-        {"Title Power", 3},
-        {"Encounter Power", 3}
+        {"Sparkling Power", "Ice", 3},
+        {"Title Power", "Ice", 3},
+        {"Encounter Power", "Ice", 3}
     }
 };
 
@@ -103,9 +104,9 @@ Recipe Fighting = {
         {"Sweet Herba Mystica", 1}
     },
     {
-        {"Sparkling Power", 3},
-        {"Title Power", 3},
-        {"Encounter Power", 3}
+        {"Sparkling Power", "Fighting", 3},
+        {"Title Power", "Fighting", 3},
+        {"Encounter Power", "Fighting", 3}
     }
 };
 
@@ -116,9 +117,9 @@ Recipe Poison = {
         {"Sweet Herba Mystica", 1}
     },
     {
-        {"Sparkling Power", 3},
-        {"Title Power", 3},
-        {"Encounter Power", 3}
+        {"Sparkling Power", "Poison", 3},
+        {"Title Power", "Poison", 3},
+        {"Encounter Power", "Poison", 3}
     }
 };
 
@@ -129,9 +130,9 @@ Recipe Ground = {
         {"Sweet Herba Mystica", 1}
     },
     {
-        {"Sparkling Power", 3},
-        {"Title Power", 3},
-        {"Encounter Power", 3}
+        {"Sparkling Power", "Ground", 3},
+        {"Title Power", "Ground", 3},
+        {"Encounter Power", "Ground", 3}
     }
 };
 
@@ -142,9 +143,9 @@ Recipe Flying = {
         {"Sweet Herba Mystica", 1}
     },
     {
-        {"Sparkling Power", 3},
-        {"Title Power", 3},
-        {"Encounter Power", 3}
+        {"Sparkling Power", "Flying", 3},
+        {"Title Power", "Flying", 3},
+        {"Encounter Power", "Flying", 3}
     }
 };
 
@@ -155,9 +156,9 @@ Recipe Psychic = {
         {"Sweet Herba Mystica", 1}
     },
     {
-        {"Sparkling Power", 3},
-        {"Title Power", 3},
-        {"Encounter Power", 3}
+        {"Sparkling Power", "Psychic", 3},
+        {"Title Power", "Psychic", 3},
+        {"Encounter Power", "Psychic", 3}
     }
 };
 
@@ -168,9 +169,9 @@ Recipe Bug = {
         {"Sweet Herba Mystica", 1}
     },
     {
-        {"Sparkling Power", 3},
-        {"Title Power", 3},
-        {"Encounter Power", 3}
+        {"Sparkling Power", "Bug", 3},
+        {"Title Power", "Bug", 3},
+        {"Encounter Power", "Bug", 3}
     }
 };
 
@@ -181,9 +182,9 @@ Recipe Rock = {
         {"Sweet Herba Mystica", 1}
     },
     {
-        {"Sparkling Power", 3},
-        {"Title Power", 3},
-        {"Encounter Power", 3}
+        {"Sparkling Power", "Rock", 3},
+        {"Title Power", "Rock", 3},
+        {"Encounter Power", "Rock", 3}
     }
 };
 
@@ -194,9 +195,9 @@ Recipe Ghost = {
         {"Sweet Herba Mystica", 1}
     },
     {
-        {"Sparkling Power", 3},
-        {"Title Power", 3},
-        {"Encounter Power", 3}
+        {"Sparkling Power", "Ghost", 3},
+        {"Title Power", "Ghost", 3},
+        {"Encounter Power", "Ghost", 3}
     }
 };
 
@@ -207,9 +208,9 @@ Recipe Dragon = {
         {"Sweet Herba Mystica", 1}
     },
     {
-        {"Sparkling Power", 3},
-        {"Title Power", 3},
-        {"Encounter Power", 3}
+        {"Sparkling Power", "Dragon", 3},
+        {"Title Power", "Dragon", 3},
+        {"Encounter Power", "Dragon", 3}
     }
 };
 
@@ -220,9 +221,9 @@ Recipe Dark = {
         {"Sweet Herba Mystica", 1}
     },
     {
-        {"Sparkling Power", 3},
-        {"Title Power", 3},
-        {"Encounter Power", 3}
+        {"Sparkling Power", "Dark", 3},
+        {"Title Power", "Dark", 3},
+        {"Encounter Power", "Dark", 3}
     }
 };
 
@@ -233,9 +234,9 @@ Recipe Steel = {
         {"Sweet Herba Mystica", 1}
     },
     {
-        {"Sparkling Power", 3},
-        {"Title Power", 3},
-        {"Encounter Power", 3}
+        {"Sparkling Power", "Steel", 3},
+        {"Title Power", "Steel", 3},
+        {"Encounter Power", "Steel", 3}
     }
 };
 
@@ -246,8 +247,8 @@ Recipe Fairy = {
         {"Sweet Herba Mystica", 1}
     },
     {
-        {"Sparkling Power", 3},
-        {"Title Power", 3},
-        {"Encounter Power", 3}
+        {"Sparkling Power", "Fairy", 3},
+        {"Title Power", "Fairy", 3},
+        {"Encounter Power", "Fairy", 3}
     }
 };

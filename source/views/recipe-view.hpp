@@ -23,7 +23,7 @@ class RecipeView : public tsl::Gui {
     // Display RecipeBonus
     list->addItem(new tsl::elm::CategoryHeader("Bonuses"));
     for (RecipeBonus& bonus : recipe.bonuses) {
-        list->addItem(new tsl::elm::ListItem(bonus.name + " Lvl " + std::to_string(bonus.level)));
+        list->addItem(new tsl::elm::ListItem(bonus.name + ": " + bonus.type + " Lv. " + std::to_string(bonus.level)));
     }
 
     frame->setContent(list);
