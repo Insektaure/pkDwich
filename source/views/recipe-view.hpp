@@ -1,26 +1,30 @@
 #pragma once
 
 #include "../components/button.hpp"
+#include "../models/monotypeSalty.hpp"
 #include <functional>
 #include <tesla.hpp>
 
 class RecipeView : public tsl::Gui {
-    
  public:
-  RecipeView(const std::string &type) : type(type) { }
+  RecipeView(const std::string &type, const Recipe& recipe) : type(type), recipe(recipe) { }
   ~RecipeView() {};
 
   virtual tsl::elm::Element *createUI() override {
     auto frame = new tsl::elm::OverlayFrame("Recipe", type);
     auto list = new tsl::elm::List();
 
-
+    // Display RecipeItems
     list->addItem(new tsl::elm::CategoryHeader("Ingredients"));
+    for (RecipeItems& item : recipe.items) {
+        list->addItem(new tsl::elm::ListItem(std::to_string(item.quantity) + "x " + item.name));
+    }
 
-    /*for (Ingredient& ingredient : serving.ingredients) {
-        list->addItem(new tsl::elm::ListItem(std::to_string(ingredient.quantity.quantity) + "x " + ingredient.name));
-        //std::cout << "Ingredient: " << ingredient.name << ", Quantity: " << ingredient.quantity.quantity << std::endl;
-    }*/
+    // Display RecipeBonus
+    list->addItem(new tsl::elm::CategoryHeader("Bonuses"));
+    for (RecipeBonus& bonus : recipe.bonuses) {
+        list->addItem(new tsl::elm::ListItem(bonus.name + " Lvl " + std::to_string(bonus.level)));
+    }
 
     frame->setContent(list);
 
@@ -29,16 +33,17 @@ class RecipeView : public tsl::Gui {
 
  private:
   std::string type;
+  Recipe recipe;
 };
-
 
 class RecipeViewButton : public Button {
  public:
-  RecipeViewButton(const std::string &text, const std::string &type) 
-    : Button(text), type(type) { 
-        this->onClick([this]() { tsl::changeTo<RecipeView>(this->type); });
+  RecipeViewButton(const std::string &text, const std::string &type, const Recipe& recipe) 
+    : Button(text), type(type), recipe(recipe) { 
+        this->onClick([this]() { tsl::changeTo<RecipeView>(this->type, this->recipe); });
     }
 
  private:
   std::string type;
+  Recipe recipe;
 };
