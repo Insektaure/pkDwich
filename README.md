@@ -6,6 +6,9 @@ pkDwich is a Nintendo Switch homebrew to view Pokemon Scarlet / Violet sandwich 
 
 #### Scarlet & Violet
 
+- Shiny Recipe (w/ Salty Herba Mystica)
+- Shiny Recipe (w/ Alternative)
+
 ## How do I use pkDwich?
 
 1. Setup WerWolv's Tesla - https://gbatemp.net/threads/tesla-the-nintendo-switch-overlay-menu.557362/
