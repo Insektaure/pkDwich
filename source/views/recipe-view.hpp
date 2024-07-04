@@ -1,7 +1,6 @@
 #pragma once
 
 #include "../components/button.hpp"
-#include "../models/monotypeSalty.hpp"
 #include <functional>
 #include <tesla.hpp>
 
