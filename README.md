@@ -1,13 +1,21 @@
 # pkDwich
 
-pkDwich is a Nintendo Switch homebrew to view Pokemon Scarlet / Violet sandwich recipes while playing Pokemon games.
+pkDwich is a Nintendo Switch homebrew to view Pokemon Scarlet / Violet "Creative Mode" sandwich recipes while playing Pokemon games.
 
 ### Features:
 
 #### Scarlet & Violet
 
-- Shiny Recipe (w/ Salty Herba Mystica)
-- Shiny Recipe (w/ Alternative)
+##### Shiny -Sparkling Power Lv.3-
+
+- Shiny Recipes (w/ Salty Herba Mystica)
+- Shiny Recipes (w/ Alternative)
+
+##### Power Effects -Lv.1 to Lv.3- (Simple Recipes)
+
+- Egg Power
+
+Sparkling Power & Encounter Power are already available in the Shiny Recipes (monotype Lv.3 only)
 
 ## How do I use pkDwich?
 
