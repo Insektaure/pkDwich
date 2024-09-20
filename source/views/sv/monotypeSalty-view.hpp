@@ -21,6 +21,7 @@ class MonotypeView : public tsl::Gui {
     list->addItem(new RecipeViewButton("Electric", "Electric", Electric));
     list->addItem(new RecipeViewButton("Fairy", "Fairy", Fairy));
     list->addItem(new RecipeViewButton("Fighting", "Fighting", Fighting));
+    list->addItem(new RecipeViewButton("Poison", "Poison", Poison));
     list->addItem(new RecipeViewButton("Fire", "Fire", Fire));
     list->addItem(new RecipeViewButton("Flying", "Flying", Flying));
     list->addItem(new RecipeViewButton("Ghost", "Ghost", Ghost));

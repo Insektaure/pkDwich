@@ -21,6 +21,7 @@ class MonotypeAltView : public tsl::Gui {
     list->addItem(new RecipeViewButton("Electric", "Electric", ElectricAlt));
     list->addItem(new RecipeViewButton("Fairy", "Fairy", Fairy));
     list->addItem(new RecipeViewButton("Fighting", "Fighting", FightingAlt));
+    list->addItem(new RecipeViewButton("Poison", "Poison", PoisonAlt));
     list->addItem(new RecipeViewButton("Fire", "Fire", FireAlt));
     list->addItem(new RecipeViewButton("Flying", "Flying", FlyingAlt));
     list->addItem(new RecipeViewButton("Ghost", "Ghost", GhostAlt));
