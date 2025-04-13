@@ -136,7 +136,7 @@ Recipe Psychic = {
     {
         {"Onion", 1},
         {"Salty Herba Mystica", 1},
-        {"Spicy Herba Mystica", 1}
+        {"Sour Herba Mystica", 1}
     },
     {
         {"Sparkling Power", "Psychic", 3},
