@@ -13,7 +13,7 @@ public:
     virtual void onHide() override {}
 
     virtual std::unique_ptr<tsl::Gui> loadInitialGui() override {
-        return initially<pkDwich>();
+        return initially<GameSelector>();
     }
 };
 
